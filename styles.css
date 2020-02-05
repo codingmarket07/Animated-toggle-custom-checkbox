@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #fb9a39;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fbb04d;
+  width: 350px;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.wrapper .container .social_media_wrap {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.125);
+}
+
+.social_media_wrap .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social_media_wrap .item:last-child {
+  margin-bottom: 0;
+}
+
+.social_media_wrap .item .item_left {
+  display: flex;
+  align-items: center;
+}
+
+.item .item_left .media_box {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #d5d6d8;
+  color: #d5d6d8;
+  position: relative;
+  margin-right: 10px;
+}
+
+.item .item_left .media_box .fab {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item .item_left .media_text {
+  color: #d5d6d8;
+}
+
+.item .item_right .checkbox {
+  width: 65px;
+  height: 35px;
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  background: #f0f0f0;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+}
+
+.item .item_right .checkbox:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 28px;
+  height: 28px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0,0,0,0.35);
+  transition: all 0.2s ease;
+}
+
+.item .item_right .checkbox:checked:before{
+  left: 32px;
+  background: #fb9a39;
+}
+
+.item.facebook.active .media_box{
+  background: #3b5999;
+  border-color: #3b5999;
+  color: #fff;
+}
+
+.item.facebook.active .media_text{
+  color: #3b5999;
+}
+
+.item.twitter.active .media_box{
+  background: #55acee;
+  border-color: #55acee;
+  color: #fff;
+}
+
+.item.twitter.active .media_text{
+  color: #55acee;
+}
+
+.item.instagram.active .media_box{
+  background: #e4405f;
+  border-color: #e4405f;
+  color: #fff;
+}
+
+.item.instagram.active .media_text{
+  color: #e4405f;
+}
+
+.item.linkedin.active .media_box{
+  background: #0077B5;
+  border-color: #0077B5;
+  color: #fff;
+}
+
+.item.linkedin.active .media_text{
+  color: #0077B5;
+}

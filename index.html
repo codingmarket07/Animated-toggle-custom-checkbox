@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".checkbox").click(function(){
+			  $(this).parents(".item").toggleClass("active");
+			})
+		});
+	</script>
+</head>
+<body>
+
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+<div class="wrapper">
+  <div class="container">
+    <div class="social_media_wrap">
+      <div class="item facebook">
+        <div class="item_left">
+          <div class="media_box">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="media_text">
+            Facebook
+          </div>
+        </div>
+        <div class="item_right">
+           <input type="checkbox" class="checkbox">
+        </div>
+      </div>
+      <div class="item twitter">
+        <div class="item_left">
+          <div class="media_box">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="media_text">
+            Twitter
+          </div>
+        </div>
+        <div class="item_right">
+          <input type="checkbox" class="checkbox">
+        </div>
+      </div>
+      <div class="item instagram">
+        <div class="item_left">
+          <div class="media_box">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="media_text">
+            Instagram
+          </div>
+        </div>
+        <div class="item_right">
+          <input type="checkbox" class="checkbox">
+        </div>
+      </div>
+      <div class="item linkedin">
+        <div class="item_left">
+          <div class="media_box">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <div class="media_text">
+            Linkedin
+          </div>
+        </div>
+        <div class="item_right">
+          <input type="checkbox" class="checkbox">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>	
+	
+</body>
+</html>
